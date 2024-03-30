@@ -90,6 +90,39 @@ body {font-family: Arial, Helvetica, sans-serif;}
   background: #ddd;
 }
 
+/* Flex Container */
+* {
+    box-sizing: border-box;
+}
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #05FAE2;
+}
+.flex-container > div {
+    background-color: #868080;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+}
+.stack > div {
+    flex-direction: column;
+    padding: 20px;
+}
+#container {
+    width: 800px;
+    margin: 0 auto;
+}
+.section_L {
+    flex-grow: 3;
+}
+.section_R {
+    flex-grow: 2;
+}
+.flex-responsive {
+    flex: 30%;
+}
+
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 550px) {
   .row, .navbar {   
