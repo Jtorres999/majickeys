@@ -9,6 +9,13 @@ body {
   font-family: Arial;
   margin: 0;
 }
+.mainContainer{
+	width: 1300px;
+	margin: 0 auto;
+}
+.flexContainer{display: flex;}
+.flexbox{flex-grow: 1;
+margin:15px;}
 
 /* Header/logo Title */
 .header {
@@ -16,6 +23,13 @@ body {
   text-align: center;
   background: #05FAE2;
   color: white;
+}
+.head {display: flex;
+           justify-content: center;
+           width: 100%; }
+
+@media screen and (max-width: 1199px){
+.head-box {width: 100%;}
 }
 
 /* Style the top navigation bar */
