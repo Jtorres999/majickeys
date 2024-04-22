@@ -10,6 +10,8 @@
 </head>
 
 <body>
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 	<header>
 	<div class="head" >
 		<img src="images/Logo disney.png" alt="The magic keys to Disney">
@@ -21,19 +23,30 @@
   <a href="about.html">About</a> 
   <a href="contact.html">Contact</a>
 </div>
-	<form action="">
-  <label for="fname">First name:</label>
-  <input type="text" id="lname" value="">
-		<label for="lname">Last name:</label>
-  <input type="text" id="lsname" value="">
-<label for="email">Email:</label>
-            <input type="text" class="enter-email"><br><br>
-            <label for="info">Comments:</label>
-            
-<textarea name="message" rows="10" cols="30"></textarea>
-  <br><br>
-  <input type="submit">
-</form>
+	<div class="container">
+  <form action="action_page.php">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+		<option value="Usa">USA</option>
+      <option value="canada">Canada</option>
+		<option value="mexico">Mexico</option>
+		<option value="other">Other please add in comment box</option>
+ </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Comments.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
 	<style>
 .flex-container {
   display: flex;
@@ -52,9 +65,10 @@
 }
 </style>
 <div class="flex-container">
-  <div><a href="https://www.instagram.com/julianajanel12/" target="_blank">Instagram</a></div>
+  <div><a href="https://www.instagram.com/julianajanel12/" target="_blank">Instagram <ion-icon name="logo-instagram"></ion-icon></a> </div>
   <div>Social Media</div>
-  <div><a href="https://www.tiktok.com/@julzsmiles12?lang=en" target="_blank">TikTok</a></div>  
+  <div><a href="https://www.tiktok.com/@julzsmiles12?lang=en" target="_blank">TikTok <ion-icon name="logo-tiktok"></ion-icon>
+	  </a></div>  
 </div>
 	
 </body>
