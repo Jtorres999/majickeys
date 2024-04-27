@@ -89,7 +89,9 @@ body {font-family: Arial, Helvetica, sans-serif;}
   background-color:#05FAE2;
   padding: 20px;
 }
-
+pre {
+     color: black;
+}
 /* Fake image, just for this example */
 .fakeimg {
   background-color: #aaa;
